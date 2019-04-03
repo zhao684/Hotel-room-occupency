@@ -1,0 +1,10 @@
+We used the code of SVM and AdaBoost from sklearn. To install sklearn, please use a computer which is Linux OS and have installed numpy and scipy, and then type command "pip install -U scikit-learn" to install sklearn. We also used numpy, matplotlib and pickle.
+
+Please run our code in this order:
+
+(0   filter.py: The original data is shuffled in this file. Since the original data is in time order, we think it's better to shuffle them to get better and fairer prediction. This file will generate "kf.p" and "testset.p" to store the shuffled data which we are going to use latter. In other word, the data will be re-shuffled after running this file, and the graph will change. The original "kf.p" and "testset.p" are the dataset we used to process algorithm, make prediction and graph. You will get the same graph with those in the report if not run this at first.)
+1    pca.py: data visualization. The PCA algorithm are in pcalearn.py and pcaproj.py, which are from HW6 and imported in pca.py. This code will generate "PCA visual.png" in current directory.
+2    tuningHyperparameter.py: We processed K-fold as cross-validation to select the best kernel and value of hyperparameter for SVM and AdaBoost. This code will generate "Mean (SVM).png" "Var (SVM).png" "Mean (AdaBoost).png" and "Var (AdaBoost).png"in current directory. 
+3    finalSelection.py: We graphed ROC and use the final selected  model to predict on the testing set and get the final accuracy.
+
+Run our code by typing command ¡°python (filename).py¡±
